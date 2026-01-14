@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap (Si generas uno luego, ponlo aquí, si no, bórralo)
+# Sitemap: https://www.genesisenki.com/sitemap.xml

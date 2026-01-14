@@ -1,0 +1,274 @@
+:root {
+    --gold: #D4AF37;
+    --dark-gold: #AA8C2C;
+    --black: #050505;
+    --dark-gray: #1a1a1a;
+    --white: #f0f0f0;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a { text-decoration: none; transition: 0.3s; }
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- HERO SECTION --- */
+.hero-hook {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.hero-hook h1 {
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 10px rgba(212, 175, 55, 0.3);
+    margin-bottom: 10px;
+}
+
+.sub-hook {
+    font-size: 1.2rem;
+    color: #ccc;
+    font-weight: 300;
+}
+
+.book-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.book-cover {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    text-align: center;
+}
+
+.book-cover img {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 0px 30px rgba(212, 175, 55, 0.15);
+    border-radius: 5px;
+}
+
+.book-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.book-details h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid var(--dark-gold);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.description li::before {
+    content: "➤";
+    color: var(--gold);
+    margin-right: 10px;
+}
+
+/* --- PURCHASE SECTION --- */
+.buy-section {
+    background-color: var(--dark-gray);
+    padding: 60px 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.buy-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.edition-col {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    background: #000;
+    padding: 55px;
+    border: 1px solid #333;
+}
+
+.edition-col h3 {
+    color: var(--white);
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 5px;
+}
+
+.btn-buy {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-buy:hover {
+    background: var(--gold);
+    color: var(--black);
+    cursor: pointer;
+}
+
+.btn-amazon {
+    background: var(--gold);
+    color: var(--black);
+    border: none;
+}
+
+.btn-amazon:hover {
+    background: var(--white);
+}
+
+/* --- NEWSLETTER SECTION WRAPPER --- */
+.resistance-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-image: linear-gradient(to bottom, #000, #111);
+}
+
+.resistance-box {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    padding: 40px;
+}
+
+/* --- MAILERLITE OVERRIDES (Para que se vea Dark Mode) --- */
+#mlb2-34333604.ml-form-embedContainer .ml-form-embedWrapper {
+    background-color: transparent !important; /* Quita el fondo blanco del form */
+}
+
+#mlb2-34333604.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4 {
+    color: var(--gold) !important;
+    font-family: 'Cinzel', serif !important;
+    font-size: 2rem !important;
+    text-transform: uppercase;
+}
+
+#mlb2-34333604.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p {
+    color: #cccccc !important;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 1.1rem !important;
+}
+
+#mlb2-34333604.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
+    background-color: #222 !important;
+    color: #fff !important;
+    border: 1px solid #444 !important;
+    font-family: 'Lato', sans-serif !important;
+}
+
+#mlb2-34333604.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
+    background-color: #800000 !important; /* Rojo Sangre */
+    color: #fff !important;
+    border: none !important;
+    font-family: 'Cinzel', serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+#mlb2-34333604.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
+    background-color: #a00000 !important;
+    cursor: pointer;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 1px solid #222;
+    font-size: 0.9rem;
+}
+
+.contact-cta {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: var(--gold);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.email-link {
+    color: #fff;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.email-link:hover {
+    opacity: 1;
+    color: var(--gold);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .hero-hook h1 { font-size: 1.8rem; }
+    .book-showcase { flex-direction: column; }
+    .book-cover { margin-bottom: 30px; }
+}
+.email-disclaimer {
+    margin-top: 12px;
+    font-size: 0.7rem;
+    color: #555;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+.legal-links {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    color: #555;
+}
+
+.legal-links a {
+    color: #666;
+    text-decoration: none;
+}
+
+.legal-links a:hover {
+    color: #999;
+    text-decoration: underline;
+}
